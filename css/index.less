@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+
+ul{
+        width: 150px;
+        height: 150px;
+        background-color: #ccc;
+        border-radius: 5px;
+        margin: 20px;
+        float: left;
+        display: flex;
+        // justify-content: center;
+        justify-content: space-around;
+        // align-items: center;
+        li{
+            width: 40px;
+            height: 40px;
+            background-color: red;
+            border-radius: 50%;
+            align-self: center;
+        }        
+    }
+    ul:nth-child(2){
+        flex-direction: column;
+
+    }
+    ul:nth-child(3){
+        flex-direction: column;
+
+        li:nth-child(1){
+            align-self: flex-end;
+            margin: 5px;
+        }
+        li:nth-child(3){          
+            align-self: flex-start;
+            margin: 5px;
+        }
+    }
+    ul:nth-child(4){
+        flex-wrap: wrap;
+       li{
+        align-self: flex-start;
+        margin: 17.5px;
+
+       }
+    }
+    ul:nth-child(5){
+        flex-wrap: wrap-reverse;
+        li{
+            align-items: flex-start;
+            margin:5px 17.5px;
+
+        }
+        li:nth-child(3){
+            margin:0 55px;
+
+        }
+        
+    }
+
+    //  开启伸缩盒子布局 display:flex
+    // 父盒子：display:flex;justify-content
+    // 子盒子:align-sele
